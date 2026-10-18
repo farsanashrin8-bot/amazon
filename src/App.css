@@ -1,0 +1,224 @@
+
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #1e293b;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1250px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: #131921 !important;
+  padding: 14px 0;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.navbar .nav-link {
+  color: #e2e8f0 !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #fbbf24 !important;
+}
+
+/* ===== HEADINGS ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #172554;
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 24px;
+}
+
+/* ===== PRODUCT CARDS ===== */
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1);
+}
+
+.card-img-top {
+  background: #ffffff;
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 18px;
+}
+
+.card-body h5,
+.card-body h6 {
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 9px 15px;
+  transition: all 0.2s ease;
+}
+
+.btn-warning {
+  background: #fbbf24;
+  border-color: #fbbf24;
+  color: #172033;
+}
+
+.btn-warning:hover {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #172033;
+}
+
+.btn-dark {
+  background: #172554;
+  border-color: #172554;
+}
+
+.btn-dark:hover {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.btn-danger:hover,
+.btn-success:hover {
+  transform: translateY(-1px);
+}
+
+/* ===== INPUTS ===== */
+.form-control,
+.form-select {
+  min-height: 44px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+/* ===== TABLES ===== */
+.table {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.table thead th {
+  background: #eaf0f8;
+  color: #172554;
+  font-weight: 700;
+  padding: 14px;
+}
+
+.table td {
+  padding: 13px;
+}
+
+/* ===== ADMIN / LOGIN FORMS ===== */
+.admin-container,
+.login-container,
+.checkout-container {
+  max-width: 800px;
+  margin: 35px auto;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+/* ===== EMPTY CART / WISHLIST ===== */
+.empty-state {
+  padding: 45px 20px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px dashed #cbd5e1;
+}
+
+.empty-state img {
+  max-width: 180px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 50px;
+  padding: 25px 15px;
+  background: #131921;
+  color: #e2e8f0;
+  text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .navbar-brand {
+    font-size: 23px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+
+  .admin-container,
+  .login-container,
+  .checkout-container {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
